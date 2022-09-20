@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Student information form" />
+    <title>Student information form</title>
+  </head>
+  <body>
+    <h1>Student Information Form</h1>
+    <form>
+      <p>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" placeholder="Name here" />
+      </p>
+      <p>
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Your Age" />
+      </p>
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Email ID" />
+      </p>
+      <p>
+        <label for="contactNum">Mobile No.:</label>
+        <input type="tel" id="contactNum" placeholder="Contact Number" />
+      </p>
+      <p>
+        <label for="selectClass">Applying for:</label>
+        <select name="" id="selectClass">
+          <optgroup label="Primary">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+          </optgroup>
+          <optgroup label="Secondary">
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option>
+          </optgroup>
+        </select>
+      </p>
+      <p>
+        <label for="gender"><h3>Gender</h3></label>
+        <label for="male">Male:</label>
+        <input type="radio" name="gender" id="male" checked />
+        <label for="female">Female:</label>
+        <input type="radio" name="gender" id="female" />
+      </p>
+      <p>
+        <label for="specialServices"
+          ><h3>Do you need these special services:</h3></label
+        >
+        <label for="schoolBus">School Bus</label>
+        <input type="checkbox" name="specialServices" id="schoolBus" />
+        <label for="schoolLunch">School Lunch</label>
+        <input type="checkbox" name="specialServices" id="schoolLunch" />
+        <label for="hostelFacility">Hostel Facility</label>
+        <input type="checkbox" name="specialServices" id="hostelFacility" />
+      </p>
+      <p>
+        <label for="comments">Have any Comments?</label><br />
+        <textarea
+          name=""
+          id="comments"
+          cols="30"
+          rows="10"
+          placeholder="Your comments here"
+        ></textarea>
+      </p>
+      <p>
+        <input type="submit" value="Send" />
+        <input type="reset" value="Clear" />
+      </p>
+    </form>
+  </body>
+</html>

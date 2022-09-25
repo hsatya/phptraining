@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Text" />
+    <title>Text</title>
+    <style type="text/css">
+      /* 
+            font-family - Specify the font name to be used.
+            font-size -  Specify the size of the font in pixels or px. It is the same pixel used in MS Word.
+            font-style - Used to apply the italics, normal or oblique.
+            font-weight - Weight is used to represent how thick the stroke of the font should be.
+                          Usually bold, light and medium.
+            text-transform - Controls the case of the text - Upercase or lowercase.
+            text-decoration - Decorating the text underlying or overlying.
+            text-shadow - Add shadow at the back of the text.
+        */
+
+      p {
+        font-family: "Times New Roman", serif;
+        font-size: 20px;
+        line-height: 2em;
+        letter-spacing: 0.2em;
+        word-spacing: 1em;
+        font-style: italic;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-indent: 500px;
+        text-shadow: 1px 1px 0px red;
+      }
+      p::first-letter {
+        font-size: 200%;
+      }
+      p::first-line {
+        text-shadow: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ex odio
+      eligendi nemo accusantium cum omnis et nisi iste reprehenderit quasi
+      placeat, aliquid deleniti corrupti beatae ab, harum quam sed. Eligendi,
+      sequi officia. Accusamus quis adipisci, alias vitae corporis ullam odit ex
+      error, ipsum obcaecati autem totam iure deserunt sed deleniti. Ad maiores
+      dolorum vero necessitatibus aut minima explicabo corporis?
+    </p>
+  </body>
+</html>

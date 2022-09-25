@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="General Adjecent Sibling Selector" />
+    <title>General Adjecent Sibling Selector</title>
+
+    <style type="text/css">
+      /* 
+            selector ~ selector
+            {
+                property1: value1; => Declaration
+                property2: value2; => Declaration
+            }
+            */
+      * {
+        font-size: large;
+      }
+      /*Same sibling but not adjacent*/
+      div ~ a {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#">Welcome</a>
+    <hr />
+    <p><a href="#">Welcome</a></p>
+    <hr />
+    <div><a href="#">Welcome</a></div>
+    <hr />
+
+    <a href="#">Welcome</a>
+    <div>
+      <div><a href="#">Welcome</a></div>
+      <p>
+        Lorem ipsum dolor sit amet <a href="">consectetur</a> adipisicing elit.
+        Rem consequuntur optio, repellat pariatur nemo sint aspernatur
+        laboriosam veritatis possimus corrupti qui provident suscipit!
+        Distinctio corrupti id delectus, a illo temporibus.
+      </p>
+    </div>
+    <a href="#">Welcome</a>
+  </body>
+</html>

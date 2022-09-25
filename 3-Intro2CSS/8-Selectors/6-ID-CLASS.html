@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ID CLASS Selectors" />
+    <title>ID CLASS Selectors</title>
+    <style type="text/css">
+      /* ID selectors are specific selctors 
+      Mention the id name and starts with hash of tag
+            #selector {
+                property1: value1; ==> Declatration
+                property2: value2; ==> Declatration
+            }
+        */
+
+      #red-border {
+        border-style: solid;
+        border-color: red;
+      }
+
+      .orange-border {
+        border-style: solid;
+        border-color: orange;
+      }
+
+      .text-italics {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        ID should only be one per element.
+        ID's are unique.
+        Each element can have only one ID.
+        Each page can have only one element with that ID 
+    -->
+    <h1 class="orange-border text-italics" id="red-border">ID Selector</h1>
+    <h1 class="orange-border">Class Selector</h1>
+  </body>
+</html>

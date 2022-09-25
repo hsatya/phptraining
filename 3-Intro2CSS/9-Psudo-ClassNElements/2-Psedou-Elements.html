@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pseduo Elements Selectors" />
+    <title>Pseduo Elements Selectors</title>
+    <style type="text/css">
+      /* Mention the type of tag
+            selector::psedou elements {
+                property1: value1; ==> Declatration
+                property2: value2; ==> Declatration
+            }
+        */
+      h1::after {
+        content: "!!!";
+      }
+      p::first-letter {
+        font-size: 200%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa veniam
+      blanditiis reprehenderit ratione? Temporibus, voluptate natus? Consequatur
+      odit mollitia perspiciatis fugiat! Sed esse deleniti cum. Odit sint
+      accusamus ducimus adipisci!
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, facere?
+      Magnam voluptate culpa obcaecati amet, placeat blanditiis ad quis
+      necessitatibus consequuntur ipsum exercitationem maxime quibusdam eius
+      assumenda alias fugiat fuga.
+    </p>
+    <a href="#1">Home</a>
+    <a href="#2">Contact</a>
+    <a href="#3">About</a>
+  </body>
+</html>

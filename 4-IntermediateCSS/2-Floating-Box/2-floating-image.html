@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Floating Image" />
+    <title>Floating Image</title>
+    <style>
+      /*
+            float property to specify the element to float left or right or
+            follow the existing flow of box arrangement.
+
+            float: none|left|right|initial|inherit;
+
+            none – This will follow the default floating of box and it also
+                        breaks the existing floating property set by it siblings or parent.
+            left and right – allows to element to float left or right
+            initial – Custom value can be given to float the element
+            inherit – Follows the inheritance property from its parent style.
+            clear: both – property will clear the floating of boxes next to each other.
+        */
+
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+      }
+      img {
+        margin-right: 20px;
+      }
+      .float-left {
+        float: left;
+      }
+      .float-right {
+        float: right;
+      }
+      .clearfix::after {
+        /*
+                content: "";
+                clear: both;
+                display: table;
+                */
+        /*This code snippet is a famous hack that many developers use to clear any floating objects after the box.*/
+        content: ".";
+        /* This display property you will learn in next lesson */
+        display: block;
+        clear: both;
+        height: 0;
+        /* Hide the content that we placed above “.” */
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>German Shepherd</h1>
+    <div class="clearfix">
+      <img
+        src="./dog.jpg"
+        alt="German Shepherd"
+        class="float-left"
+        height="250px"
+        width="250px"
+      />
+      <p>
+        The German Shepherd (German: Deutscher Schäferhund, German
+        pronunciation: is a breed of medium to large-sized working dog that
+        originated in Germany. The breed's officially recognized name is German
+        Shepherd Dog in the English language (sometimes abbreviated as GSD). The
+        breed was once known as the Alsatian in Britain and Ireland
+      </p>
+    </div>
+    <hr />
+    <div class="clearfix">
+      <img
+        src="./dog.jpg"
+        alt="German Shepherd"
+        class="float-right"
+        height="250px"
+        width="250px"
+      />
+      <p>
+        The German Shepherd (German: Deutscher Schäferhund, German
+        pronunciation: is a breed of medium to large-sized working dog that
+        originated in Germany. The breed's officially recognized name is German
+        Shepherd Dog in the English language (sometimes abbreviated as GSD). The
+        breed was once known as the Alsatian in Britain and Ireland
+      </p>
+    </div>
+    <hr />
+    <div class="clearfix">
+      <img
+        src="./dog.jpg"
+        alt="German Shepherd"
+        class="float-left"
+        height="250px"
+        width="250px"
+      />
+      <img
+        src="./dog.jpg"
+        alt="German Shepherd"
+        class="float-left"
+        height="250px"
+        width="250px"
+      />
+      <img
+        src="./dog.jpg"
+        alt="German Shepherd"
+        class="float-left"
+        height="250px"
+        width="250px"
+      />
+    </div>
+  </body>
+</html>
